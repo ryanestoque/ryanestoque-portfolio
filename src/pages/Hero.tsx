@@ -113,7 +113,7 @@ export default function Hero() {
                         <Phone />
                       </div>
                       <CardTitle>Book a Call</CardTitle>
-                      <CardDescription>+63-9652961801</CardDescription>
+                      <CardDescription>+63-9652951801</CardDescription>
                     </CardHeader>
                   </Card>
                   <Card className="flex-1">

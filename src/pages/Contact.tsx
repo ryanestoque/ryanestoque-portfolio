@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/drawer"
 import { motion } from "motion/react";
 import { Mail, Phone } from "lucide-react";
+import React from "react"; // Ensure React is imported for Fragment
 
 export default function Contact() {
     return(
@@ -30,23 +31,27 @@ export default function Contact() {
           </motion.div>
         </div>
         <div className="px-4 py-10 md:py-20 dark">
-          <h1 className="relative z-10 mx-auto max-w-4xl text-center text-5xl font-bold text-slate-700 md:text-6xl lg:text-6xl dark:text-slate-300">
+          <h1 className="relative z-10 mx-auto max-w-4xl text-center text-5xl font-bold text-slate-700 md:text-6xl lg:text-7xl dark:text-slate-300">
             {"FROM WHAT IF TO WHAT'S NEXT"
               .split(" ")
               .map((word, index) => (
-                <motion.span
-                  key={index}
-                  initial={{ opacity: 0, filter: "blur(4px)", y: 10 }}
-                  animate={{ opacity: 1, filter: "blur(0px)", y: 0 }}
-                  transition={{
-                    duration: 0.5,
-                    delay: index * 0.1,
-                    ease: "easeInOut",
-                  }}
-                  className="mr-2 inline-block"
-                >
-                  {word}
-                </motion.span>
+                <React.Fragment key={index}>
+                  {/* CONDITION: If the word is "WHAT'S", add a line break before it */}
+                  {word === "WHAT'S" && <br className="block" />} 
+                  
+                  <motion.span
+                    initial={{ opacity: 0, filter: "blur(4px)", y: 10 }}
+                    animate={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+                    transition={{
+                      duration: 0.5,
+                      delay: index * 0.1, // Delays stay sequential (0.1, 0.2, 0.3...)
+                      ease: "easeInOut",
+                    }}
+                    className="mr-2 inline-block"
+                  >
+                    {word}
+                  </motion.span>
+                </React.Fragment>
               ))}
           </h1>
           <motion.p
@@ -93,7 +98,7 @@ export default function Contact() {
                         <Phone />
                       </div>
                       <CardTitle>Book a Call</CardTitle>
-                      <CardDescription>+63-9652961801</CardDescription>
+                      <CardDescription>+63-9652951801</CardDescription>
                     </CardHeader>
                   </Card>
                   <Card className="flex-1">
