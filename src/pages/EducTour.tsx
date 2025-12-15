@@ -22,28 +22,28 @@ const tourStops = [
   {
     title: "UP Cebu Business Incubator for IT",
     description: "Established in 2010 by UP and DOST, it embarked on an aggressive marketing campaign beyond the confines of the campus in 2011 to encourage potential locators from Region VII or Central Visayas, where Cebu is right at the center.",
-    img: "./up-init-place.jpg",
+    img: "./up-init-place.webp",
     journalImg: "./up-init-journal.webp",
     link: "https://www.facebook.com/UPCebuinIT"
   },
   {
     title: "Dynata Philippines, Inc.",
     description: "Dynata Philippines, Inc. is the Philippine branch of global data provider Dynata, a leading source of first-party data for market research, marketing, and advertising, operating in the Philippines with a significant presence in Cebu",
-    img: "./dynata-place.png",
+    img: "./dynata-place.webp",
     journalImg: "./dynata-journal.webp",
     link: "https://www.facebook.com/dynatacebu"
   },
   {
     title: "Rivan IT Cebu",
     description: "Rivan IT Cebu is a prominent, long-running IT training center in the Philippines, specializing in hands-on, practical bootcamps for in-demand tech skills like Cisco CCNA/CCNP, VoIP, Fiber Optics, Linux, and Networking, aiming to equip students for IT careers with real equipment and high exam passing rates, often partnering with universities for student immersion.",
-    img: "./rivan-place.jpg",
+    img: "./rivan-place.webp",
     journalImg: "./rivan-it-journal.webp",
     link: "https://www.facebook.com/rivanitcebu"
   },
   {
     title: "Mata Technologies",
     description: "Mata Technologies Inc. is a Philippine-based tech company specializing in creating immersive digital experiences, primarily through 360 Virtual Tours, Virtual Maps, and 3D photography, aiming to digitally transform locations like tourist spots, heritage sites, and properties",
-    img: "./mata-place.jpg",
+    img: "./mata-place.webp",
     journalImg: "./mata-journal.webp",
     link: "https://www.facebook.com/matatechnologies"
   },

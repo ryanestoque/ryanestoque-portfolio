@@ -8,27 +8,27 @@ import { Marquee } from "../ui/marquee";
 const certificates = [
   {
     name: "UP Business Incubator",
-    img: "./cebu-bohol-cert.jpg", // Replace with actual landscape cert image path
+    img: "./cebu-bohol-cert.webp", // Replace with actual landscape cert image path
   },
   {
     name: "Dynata Philippines",
-    img: "./codechum-im.png",
+    img: "./codechum-im.webp",
   },
   {
     name: "Rivan IT Cebu",
-    img: "./codechum-prog-comp.png",
+    img: "./codechum-prog-comp.webp",
   },
   {
     name: "Mata Technologies",
-    img: "./ideas-pitch.png",
+    img: "./ideas-pitch.webp",
   },
   {
     name: "T.a.R.S.I.E.R 117",
-    img: "./quiz-bowl.jpg",
+    img: "./quiz-bowl.webp",
   },
   {
     name: "T.a.R.S.I.E.R 117",
-    img: "./tarsier-cert.jpg",
+    img: "./tarsier-cert.webp",
   },
 ];
 

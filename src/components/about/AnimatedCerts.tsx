@@ -17,31 +17,31 @@ let notifications: Item[] = [
     name: "UP Business Incubator for IT",
     description: "Jason Nieva",
     time: "November 12, 2025",
-    img: "./up-init-logo.jpg", // Replace with your actual image paths
+    img: "./up-init-logo.webp", // Replace with your actual image paths
   },
   {
     name: "Dynata Philippines, Inc.",
     description: "Anton, Valerie, & Jake",
     time: "November 13, 2025",
-    img: "./dynata-logo.png",
+    img: "./dynata-logo.webp",
   },
   {
     name: "Rivan IT Cebu",
     description: "Kevin Lu",
     time: "November 13, 2025",
-    img: "./rivan-logo.jpg",
+    img: "./rivan-logo.webp",
   },
   {
     name: "Mata Technologies, Inc.",
     description: "Kemuel Andre Tantuan",
     time: "November 14, 2025",
-    img: "./mata-technologies-logo.jpg",
+    img: "./mata-technologies-logo.webp",
   },
   {
     name: "T.a.R.S.I.E.R 117",
     description: "Darwin Bernasor",
     time: "November 15, 2025",
-    img: "./tarsier-117-logo.jpg",
+    img: "./tarsier-117-logo.webp",
   }
 ]
 

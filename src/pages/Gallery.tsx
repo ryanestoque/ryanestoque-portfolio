@@ -8,13 +8,13 @@ export default function Gallery() {
     {
       title: "",
       image:
-        "gallery-20.jpg",
+        "gallery-20.webp",
       className: "absolute top-10 left-[20%] rotate-[-5deg]",
     },
     {
       title: "",
       image:
-        "gallery-16.jpg",
+        "gallery-16.webp",
       className: "absolute top-40 left-[25%] rotate-[-7deg]",
     },
     {
