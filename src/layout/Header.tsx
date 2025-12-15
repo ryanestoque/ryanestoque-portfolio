@@ -38,8 +38,8 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
  
   return (
-    <header className="relative w-full" >
-      <Navbar className="dark">
+    <header className="w-full" >
+      <Navbar className="dark fixed top-2 inset-x-0 z-50">
         {/* Desktop Navigation */}
         <NavBody>
           <NavbarLogo/>
