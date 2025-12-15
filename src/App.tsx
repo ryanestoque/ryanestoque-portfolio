@@ -1,4 +1,3 @@
-import Preloader from "./components/common/preloader";
 import About from "./pages/About";
 import Certificates from "./pages/Certificates";
 import Contact from "./pages/Contact";
