@@ -26,13 +26,13 @@ export default function Gallery() {
     {
       title: "",
       image:
-        "gallery-11.jpg",
+        "gallery-11.webp",
       className: "absolute top-32 left-[55%] rotate-[10deg]",
     },
     {
       title: "",
       image:
-        "gallery-12.jpg",
+        "gallery-12.webp",
       className: "absolute top-20 right-[35%] rotate-[2deg]",
     },
     {
@@ -44,24 +44,24 @@ export default function Gallery() {
     {
       title: "",
       image:
-        "gallery-17.jpg",
+        "gallery-17.webp",
       className: "absolute top-8 left-[30%] rotate-[4deg]",
     },
     {
       title: "",
-      image: "gallery-18.jpg",
+      image: "gallery-18.webp",
       // Was: left-[20%] rotate-[-5deg]
       className: "absolute top-10 right-[20%] rotate-[5deg]", 
     },
     {
       title: "",
-      image: "gallery-23.jpg",
+      image: "gallery-23.webp",
       // Was: left-[25%] rotate-[-7deg]
       className: "absolute top-40 right-[25%] rotate-[7deg]",
     },
     {
       title: "",
-      image: "gallery-22.jpg",
+      image: "gallery-22.webp",
       // Was: left-[45%] rotate-[-7deg]
       className: "absolute top-24 right-[45%] rotate-[7deg]",
     },

@@ -50,7 +50,7 @@ const tourStops = [
   {
     title: "T.a.R.S.I.E.R. 117",
     description: "TaRSIER 117 (Telephone and Radio System Integrated Emergency Response) is the dedicated emergency hotline and disaster management system for Bohol, Philippines, acting as a unified command for police, fire, and medical emergencies, with '117' being its primary contact number before the national 911 switch.",
-    img: "./tarsier-117-place.JPG",
+    img: "./tarsier-117-place.webp",
     journalImg: "./tarsier-journal.webp",
     link: "https://www.facebook.com/profile.php?id=100076037333505"
   },
