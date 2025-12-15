@@ -4,12 +4,6 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const imagesToPreload = [
-  "./about-profile-img.webp",
-  "./codechum-im.png",
-  "./codechum-prog-comp.png",
-  "./dynata-journal.webp",
-  "./dynata-logo.png",
-  "./dynata-place.png",
   "./gallery-5.webp",
   "./gallery-7.webp",
   "./gallery-11.jpg",
@@ -20,23 +14,6 @@ const imagesToPreload = [
   "./gallery-20.jpg",
   "./gallery-22.jpg",
   "./gallery-23.jpg",
-  "./hero-profile-img.webp",
-  "./ideas-pitch.png",
-  "./impression-journal.webp",
-  "./mata-journal.webp",
-  "./mata-technologies-logo.jpg",
-  "./quiz-bowl.jpg",
-  "./rivan-it-journal.webp",
-  "./rivan-logo.jpg",
-  "./rivan-place.jpg",
-  "./tarsier-117-logo.jpg",
-  "./tarsier-117-place.JPG",
-  "./tarsier-cert.jpg",
-  "./tarsier-journal.jpg",
-  "./tarsier-journal.webp",
-  "./up-init-journal.webp",
-  "./up-init-logo.jpg",
-  "./up-init-place.jpg",
 ];
 
 export default function Preloader({ children }: { children: React.ReactNode }) {
