@@ -4,16 +4,14 @@ import Header from "@/layout/Header";
 import { motion } from "motion/react";
 import {
   Drawer,
-  DrawerClose,
   DrawerContent,
-  DrawerFooter,
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer"
-import { Button } from "@/components/ui/button";
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Mail, Phone } from "lucide-react";
+import { TypingAnimation } from "@/components/ui/typing-animation";
 
 export default function Hero() {
   return(
@@ -82,9 +80,9 @@ export default function Hero() {
               duration: 0.3,
               delay: 0.8,
             }}
-            className="relative z-10 mx-auto max-w-xl py-4 text-center text-lg font-normal text-neutral-600 dark:text-neutral-400"
+            className="relative z-10 mx-auto max-w-xl py-4 text-center text-lg font-normal text-neutral-600 dark:text-neutral-400 mt-2"
           >
-            Hi, I am Ryan Christopher Estoque, a Web Enthusiast.
+            <TypingAnimation typeSpeed={30} className="text-neutral-50 leading-0.5">Greetings, I am Ryan Christopher Estoque, a Web Enthusiast.</TypingAnimation>
           </motion.p>
           <motion.div
             initial={{
@@ -110,7 +108,7 @@ export default function Hero() {
                 </DrawerHeader>
                 <div className="p-4 flex flex-row gap-2 justify-center"> 
                   <Card className="flex-1">
-                    <CardHeader>
+                    <CardHeader className="break-all">
                       <div className="rounded-full bg-neutral-800 p-4 w-fit mb-2 border border-neutral-700">
                         <Phone />
                       </div>
@@ -128,11 +126,6 @@ export default function Hero() {
                     </CardHeader>
                   </Card>
                 </div>
-                <DrawerFooter>
-                  <DrawerClose>
-                    <Button variant="outline">Cancel</Button>
-                  </DrawerClose>
-                </DrawerFooter>
               </DrawerContent>
             </Drawer>
           </motion.div>

@@ -10,6 +10,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { GlowingEffect } from "@/components/ui/glowing-effect";
 import { HyperText } from "@/components/ui/hyper-text";
 import { Lens } from "@/components/ui/lens";
 import { useDraggableScroll } from "@/hooks/useDraggableScroll"; // Import the hook
@@ -59,6 +60,13 @@ const TourCard = ({ title, description, img, journalImg, link }: any) => {
   return (
     <div className="snap-center shrink-0 h-auto flex"> 
       <Card className="dark relative w-[300px] sm:w-[400px] h-full shadow-none border-neutral-800 bg-black/40 backdrop-blur-sm flex flex-col">
+        <GlowingEffect
+          spread={40}
+          glow={true}
+          disabled={false}
+          proximity={64}
+          inactiveZone={0.01}
+        />
         <CardHeader>
           <Lens zoomFactor={2} lensSize={150} isStatic={false} ariaLabel="Zoom Area">
             <div className="relative h-64 w-full overflow-hidden rounded-md">
@@ -116,7 +124,7 @@ export default function EducTour() {
   const { ref, onMouseDown, onMouseUp, onMouseMove, onMouseLeave } = useDraggableScroll();
 
   return (
-    <section id="eductour" className="px-8 lg:px-16 xl:px-32 dark flex flex-col justify-center items-center min-h-screen w-full py-16 lg:py-0">
+    <section id="eductour" className="px-8 lg:px-16 xl:px-32 dark flex flex-col gap-4 justify-center items-center min-h-screen w-full py-16 lg:py-0">
       <HyperText className="text-4xl font-bold w-full text-center">Educational Tour</HyperText>
 
       <div className="w-full relative">

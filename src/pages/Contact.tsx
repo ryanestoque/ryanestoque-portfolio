@@ -3,16 +3,13 @@ import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Drawer,
-  DrawerClose,
   DrawerContent,
-  DrawerFooter,
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer"
 import { motion } from "motion/react";
 import { Mail, Phone } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 export default function Contact() {
     return(
@@ -100,7 +97,7 @@ export default function Contact() {
                     </CardHeader>
                   </Card>
                   <Card className="flex-1">
-                    <CardHeader>
+                    <CardHeader className="break-all">
                       <div className="rounded-full bg-neutral-800 p-4 w-fit mb-2 border border-neutral-700">
                         <Mail />
                       </div>
@@ -109,11 +106,6 @@ export default function Contact() {
                     </CardHeader>
                   </Card>
                 </div>
-                <DrawerFooter>
-                  <DrawerClose>
-                    <Button variant="outline">Cancel</Button>
-                  </DrawerClose>
-                </DrawerFooter>
               </DrawerContent>
             </Drawer>
 
