@@ -16,7 +16,6 @@ import {
   SiShadcnui,
   SiFirebase,
   SiJavascript,
-  SiMiro,
   SiPhp,
   SiExpress,
   SiPython,

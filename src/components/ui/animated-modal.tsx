@@ -86,7 +86,7 @@ export const ModalBody = ({
     }
   }, [open]);
 
-  const modalRef = useRef(null);
+  const modalRef = useRef<HTMLDivElement>(null);
   const { setOpen } = useModal();
   useOutsideClick(modalRef, () => setOpen(false));
 
@@ -203,11 +203,13 @@ const CloseIcon = () => {
 
 // Hook to detect clicks outside of a component
 export const useOutsideClick = (
-  ref: React.RefObject<HTMLDivElement>,
+  // 1. CHANGE THIS LINE: Add "| null"
+  ref: React.RefObject<HTMLDivElement | null>, 
   callback: Function
 ) => {
   useEffect(() => {
     const listener = (event: any) => {
+      // 2. The check here handles the null case safely already
       if (!ref.current || ref.current.contains(event.target)) {
         return;
       }
