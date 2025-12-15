@@ -31,7 +31,7 @@ export default function Contact() {
         </div>
         <div className="px-4 py-10 md:py-20 dark">
           <h1 className="relative z-10 mx-auto max-w-4xl text-center text-5xl font-bold text-slate-700 md:text-6xl lg:text-6xl dark:text-slate-300">
-            {"FROM WHAT IF TO WHAT NEXT"
+            {"FROM WHAT IF TO WHAT'S NEXT"
               .split(" ")
               .map((word, index) => (
                 <motion.span
@@ -77,7 +77,7 @@ export default function Contact() {
             }}
             className="relative z-10 mt-8 flex flex-wrap items-center justify-center gap-4"
           >
-<Drawer>
+          <Drawer>
               <DrawerTrigger>            
                 <InteractiveHoverButton>
                   Let's interact

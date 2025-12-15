@@ -117,7 +117,7 @@ export default function Hero() {
                     </CardHeader>
                   </Card>
                   <Card className="flex-1">
-                    <CardHeader>
+                    <CardHeader className="break-all">
                       <div className="rounded-full bg-neutral-800 p-4 w-fit mb-2 border border-neutral-700">
                         <Mail />
                       </div>
