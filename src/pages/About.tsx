@@ -1,18 +1,13 @@
 import { AnimatedCerts } from "@/components/about/AnimatedCerts"
 import { CertMarquee } from "@/components/about/CertMarquee"
 import { TechMarquee } from "@/components/about/TechMarquee"
-import { AnimatedList } from "@/components/ui/animated-list"
 import { BentoCard, BentoGrid } from "@/components/ui/bento-grid"
-import { OrbitingCircles } from "@/components/ui/orbiting-circles"
 import { Ripple } from "@/components/ui/ripple"
 import {
-  BellIcon,
-  CalendarIcon,
   FileTextIcon,
   GlobeIcon,
-  InputIcon,
 } from "@radix-ui/react-icons"
-import { File, GraduationCap, Search, Settings, Sparkle } from "lucide-react"
+import { GraduationCap, Sparkle } from "lucide-react"
 
 const features = [
   {

@@ -1,4 +1,3 @@
-import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button";
 import { SparklesCore } from "@/components/ui/sparkles";
 import Header from "@/layout/Header";

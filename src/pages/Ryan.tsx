@@ -1,5 +1,4 @@
 import { AnimatedGradientText } from "@/components/ui/animated-gradient-text";
-import { AnimatedShinyText } from "@/components/ui/animated-shiny-text";
 import { HyperText } from "@/components/ui/hyper-text"; // Assuming import path
 
 export default function Ryan() {

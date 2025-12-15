@@ -1,6 +1,5 @@
 "use client";
 
-import { Modal, ModalBody, ModalContent, ModalTrigger } from "@/components/ui/animated-modal";
 import { Button } from "@/components/ui/button";
 import {
   Card,
