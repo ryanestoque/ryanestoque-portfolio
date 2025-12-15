@@ -4,16 +4,17 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const imagesToPreload = [
-  "./gallery-5.webp",
-  "./gallery-7.webp",
-  "./gallery-11.jpg",
-  "./gallery-12.jpg",
-  "./gallery-16.jpg",
-  "./gallery-17.jpg",
-  "./gallery-18.jpg",
-  "./gallery-20.jpg",
-  "./gallery-22.jpg",
-  "./gallery-23.jpg",
+  "/hero-profile-img.webp",
+  "/about-profile-img.webp",
+  "/impression-journal.webp",
+  "/gallery-11.jpg",
+  "/gallery-12.jpg",
+  "/gallery-16.jpg",
+  "/gallery-17.jpg",
+  "/gallery-18.jpg",
+  "/gallery-20.jpg",
+  "/gallery-22.jpg",
+  "/gallery-23.jpg",
 ];
 
 export default function Preloader({ children }: { children: React.ReactNode }) {
