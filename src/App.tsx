@@ -10,7 +10,7 @@ import Ryan from "./pages/Ryan";
 export default function App() {
   return (
     // 2. Wrap everything inside Preloader
-    <Preloader>
+    // <Preloader>
       <main>
         <Hero />
         <About />
@@ -20,6 +20,6 @@ export default function App() {
         <Gallery />
         <Contact />
       </main>
-    </Preloader>
+    // </Preloader>
   )
 }
