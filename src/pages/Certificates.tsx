@@ -50,7 +50,7 @@ export default function Certificates() {
   ];
 
   return(
-    <section className="dark flex flex-col h-screen justify-center items-center overflow-hidden w-full">
+    <section className="dark flex flex-col min-h-screen items-center w-full py-16 lg:py-0">
       <div className="flex justify-center">
         <HyperText className="text-4xl font-bold w-full text-center">Certifications</HyperText>
       </div>

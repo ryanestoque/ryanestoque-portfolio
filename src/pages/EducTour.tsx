@@ -22,49 +22,43 @@ const tourStops = [
     title: "UP Cebu Business Incubator for IT",
     description: "Established in 2010 by UP and DOST, it embarked on an aggressive marketing campaign beyond the confines of the campus in 2011 to encourage potential locators from Region VII or Central Visayas, where Cebu is right at the center.",
     img: "./up-init-place.jpg",
-    journalImg: "./up-init-journal.webp"
+    journalImg: "./up-init-journal.webp",
+    link: "https://www.facebook.com/UPCebuinIT"
   },
   {
     title: "Dynata Philippines, Inc.",
     description: "Dynata Philippines, Inc. is the Philippine branch of global data provider Dynata, a leading source of first-party data for market research, marketing, and advertising, operating in the Philippines with a significant presence in Cebu",
     img: "./dynata-place.png",
-    journalImg: "./dynata-journal.webp"
+    journalImg: "./dynata-journal.webp",
+    link: "https://www.facebook.com/dynatacebu"
   },
   {
     title: "Rivan IT Cebu",
-    description: "Dynata Philippines, Inc. is the Philippine branch of global data provider Dynata, a leading source of first-party data for market research, marketing, and advertising, operating in the Philippines with a significant presence in Cebu",
+    description: "Rivan IT Cebu is a prominent, long-running IT training center in the Philippines, specializing in hands-on, practical bootcamps for in-demand tech skills like Cisco CCNA/CCNP, VoIP, Fiber Optics, Linux, and Networking, aiming to equip students for IT careers with real equipment and high exam passing rates, often partnering with universities for student immersion.",
     img: "./rivan-place.jpg",
-    journalImg: "./rivan-it-journal.webp"
+    journalImg: "./rivan-it-journal.webp",
+    link: "https://www.facebook.com/rivanitcebu"
   },
   {
     title: "Mata Technologies",
     description: "Mata Technologies Inc. is a Philippine-based tech company specializing in creating immersive digital experiences, primarily through 360 Virtual Tours, Virtual Maps, and 3D photography, aiming to digitally transform locations like tourist spots, heritage sites, and properties",
     img: "./mata-place.jpg",
-    journalImg: "./mata-journal.webp"
+    journalImg: "./mata-journal.webp",
+    link: "https://www.facebook.com/matatechnologies"
   },
   {
     title: "T.a.R.S.I.E.R. 117",
     description: "TaRSIER 117 (Telephone and Radio System Integrated Emergency Response) is the dedicated emergency hotline and disaster management system for Bohol, Philippines, acting as a unified command for police, fire, and medical emergencies, with '117' being its primary contact number before the national 911 switch.",
     img: "./tarsier-117-place.JPG",
-    journalImg: "./tarsier-journal.webp"
+    journalImg: "./tarsier-journal.webp",
+    link: "https://www.facebook.com/profile.php?id=100076037333505"
   },
 ];
 
-// 2. COMPONENT
-const TourCard = ({ title, description, img, journalImg }: any) => {
+const TourCard = ({ title, description, img, journalImg, link }: any) => {
   return (
-    // 1. WRAPPER FIX: 
-    // - Remove 'flex flex-col justify-center' (which centers vertically but doesn't stretch)
-    // - Add 'h-auto' so it respects the flex-parent's stretch alignment
-    // - Add 'flex' so the inner Card can use h-full relative to this wrapper
     <div className="snap-center shrink-0 h-auto flex"> 
-      
-      {/* 2. CARD FIX:
-          - 'h-full': Fills the wrapper's height (which is now equal to the tallest card)
-          - 'flex flex-col': Enables the footer push
-      */}
       <Card className="dark relative w-[300px] sm:w-[400px] h-full shadow-none border-neutral-800 bg-black/40 backdrop-blur-sm flex flex-col">
-        
         <CardHeader>
           <Lens zoomFactor={2} lensSize={150} isStatic={false} ariaLabel="Zoom Area">
             <div className="relative h-64 w-full overflow-hidden rounded-md">
@@ -111,7 +105,7 @@ const TourCard = ({ title, description, img, journalImg }: any) => {
                 </div>
             </DialogContent>
           </Dialog>
-          <Button className="cursor-pointer" variant="secondary"><ExternalLink /></Button>
+          <a href={link} target="_blank"><Button className="cursor-pointer" variant="secondary"><ExternalLink /></Button></a>
         </CardFooter>
       </Card>
     </div>
@@ -122,7 +116,7 @@ export default function EducTour() {
   const { ref, onMouseDown, onMouseUp, onMouseMove, onMouseLeave } = useDraggableScroll();
 
   return (
-    <section className="flex flex-col justify-center items-center h-screen gap-10 overflow-hidden w-full">
+    <section className="dark flex flex-col justify-center items-center min-h-screen w-full py-16 lg:py-0">
       <HyperText className="text-4xl font-bold w-full text-center">Educational Tour</HyperText>
 
       <div className="w-full relative">

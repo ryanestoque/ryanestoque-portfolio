@@ -138,12 +138,12 @@ const features = [
 
 export default function About() {
   return(
-    <>
+    <section className="w-full min-h-screen h-auto py-16 lg:py-0">
       <BentoGrid className="dark lg:grid-rows-3">
         {features.map((feature) => (
           <BentoCard key={feature.name} {...feature} />
         ))}
       </BentoGrid>
-    </>
+    </section>
   )
 }
