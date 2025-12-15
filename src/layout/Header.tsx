@@ -39,7 +39,7 @@ export default function Header() {
  
   return (
     <header className="w-full" >
-      <Navbar className="dark fixed top-2 inset-x-0 z-50">
+      <Navbar className="dark fixed top-0 inset-x-0 z-50">
         {/* Desktop Navigation */}
         <NavBody>
           <NavbarLogo/>
