@@ -14,7 +14,7 @@ const features = [
     Icon: Sparkle,
     name: "A detail-oriented individual",
     description: "Enough is not enough.",
-    href: "/",
+    href: "#about",
     cta: "About me",
     
     // --- THE FIX ---
@@ -40,8 +40,8 @@ const features = [
     Icon: GraduationCap,
     name: "Road to Mastery",
     description: "I never, ever get bored with the basics." ,
-    href: "/",
-    cta: "View projects",
+    href: "https://github.com/ryanestoque?tab=repositories",
+    cta: "View ryanestoque at GitHub",
     background: 
     <div className="opacity-100">
       <TechMarquee />
@@ -52,7 +52,7 @@ const features = [
     Icon: FileTextIcon,
     name: "Best teacher: Experience",
     description: "With certifications, you can't go wrong with me.",
-    href: "/",
+    href: "#certifications",
     cta: "View certificates",
     background: 
     <div className="opacity-100">
@@ -64,8 +64,8 @@ const features = [
     Icon: GlobeIcon,
     name: "Learning while having fun",
     description: "2025 Cebu-Bohol Educational Tour",
-    href: "/",
-    cta: "See Gallery", // "Learn more" is a bit boring for a tour
+    href: "#eductour",
+    cta: "See Journey", // "Learn more" is a bit boring for a tour
     
     // --- THE FIX ---
     background: (
@@ -138,7 +138,7 @@ const features = [
 
 export default function About() {
   return(
-    <section className="w-full min-h-screen h-auto py-16 lg:py-0">
+    <section className="px-8 lg:px-16 xl:px-32 w-full min-h-screen py-16 lg:py-0">
       <BentoGrid className="dark lg:grid-rows-3">
         {features.map((feature) => (
           <BentoCard key={feature.name} {...feature} />

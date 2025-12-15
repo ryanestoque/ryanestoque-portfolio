@@ -5,7 +5,7 @@ import { SiFacebook, SiGithub, SiYoutube } from "react-icons/si";
 
 export default function Ryan() {
   return (
-    <section className="flex flex-col min-h-screen items-center w-full py-16 lg:py-0">
+    <section id="about" className="px-8 lg:px-16 xl:px-32 flex flex-col min-h-screen justify-center items-center w-full py-16 lg:py-0">
       <div className="flex flex-col gap-16 max-w-5xl w-full">
         <div className="flex justify-center">
           <HyperText className="text-4xl font-bold w-full text-center">Know About Me</HyperText>
@@ -27,9 +27,9 @@ export default function Ryan() {
               <h1 className="text-lg font-light">Web Developer</h1>
             </div>
             <div className="flex flex-row items-center gap-4">
-              <a href="https://github.com/ryanestoque/" target="_blank"><SiGithub /></a>
-              <a href="https://www.facebook.com/ryanestoque02" target="_blank"><SiFacebook /></a>
-              <a href="https://www.youtube.com/@ryanestoque" target="_blank"><SiYoutube /></a>
+              <a href="https://github.com/ryanestoque/" target="_blank"><SiGithub className="w-6 h-6"/></a>
+              <a href="https://www.facebook.com/ryanestoque02" target="_blank"><SiFacebook className="w-6 h-6"/></a>
+              <a href="https://www.youtube.com/@ryanestoque" target="_blank"><SiYoutube className="w-6 h-6"/></a>
             </div>
           </div>
 
@@ -56,7 +56,7 @@ export default function Ryan() {
               <span className="text-white font-medium"> 'Three-Quarter Stack'</span> territory. 
               I build accessible, user-friendly interfaces and dabble in the dark arts of server management.
               I particularly hate deadlines and have keen eye for minor flaws, an imperfect-perfectionist indeed.
-              If you feel like going crazy with art of web developing, you know where to find me.
+              If you feel like going crazy with the art of web developing, you know where to find me.
               <br className="hidden md:block" />
               <TypingAnimation typeSpeed={30} className="italic block mt-4 text-neutral-500">"Increase that padding of yours, brooo."</TypingAnimation>
             </p>

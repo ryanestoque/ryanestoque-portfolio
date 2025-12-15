@@ -22,8 +22,8 @@ export default function Header() {
       link: "#about",
     },
     {
-      name: "Projects",
-      link: "#projects",
+      name: "Certifications",
+      link: "#certifications",
     },
     {
       name: "Educ Tour",
@@ -31,7 +31,7 @@ export default function Header() {
     },
     {
       name: "Contact",
-      link: "#eductour",
+      link: "#contact",
     },
   ];
  

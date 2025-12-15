@@ -116,7 +116,7 @@ export default function EducTour() {
   const { ref, onMouseDown, onMouseUp, onMouseMove, onMouseLeave } = useDraggableScroll();
 
   return (
-    <section className="dark flex flex-col justify-center items-center min-h-screen w-full py-16 lg:py-0">
+    <section id="eductour" className="px-8 lg:px-16 xl:px-32 dark flex flex-col justify-center items-center min-h-screen w-full py-16 lg:py-0">
       <HyperText className="text-4xl font-bold w-full text-center">Educational Tour</HyperText>
 
       <div className="w-full relative">

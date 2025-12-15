@@ -74,7 +74,7 @@ export default function Gallery() {
   ];
 
   return(
-    <section className="flex flex-col h-screen justify-center items-center w-full py-16 lg:py-0">
+    <section className="px-8 lg:px-16 xl:px-32 flex flex-col h-screen justify-center items-center w-full py-16 lg:py-0">
       <DraggableCardContainer className="dark relative flex h-full  w-full items-center justify-center overflow-clip">
         <p className="absolute top-1/2 mx-auto max-w-sm -translate-y-3/4 text-center text-2xl font-black text-neutral-400 md:text-4xl dark:text-neutral-800">
          <AuroraText colors={["#FF0080", "#7928CA", "#0070F3", "#38bdf8"]}> Daghang Salamat, <br />Cebu and Bohol!</AuroraText>
