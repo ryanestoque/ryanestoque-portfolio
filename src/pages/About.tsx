@@ -40,8 +40,8 @@ const features = [
     Icon: GraduationCap,
     name: "Road to Mastery",
     description: "I never, ever get bored with the basics." ,
-    href: "https://github.com/ryanestoque?tab=repositories",
-    cta: "View ryanestoque at GitHub",
+    href: "#projects",
+    cta: "View projects",
     background: 
     <div className="opacity-100">
       <TechMarquee />

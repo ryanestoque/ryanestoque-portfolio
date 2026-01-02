@@ -1,8 +1,6 @@
 import { AuroraText } from "@/components/ui/aurora-text";
 import { DraggableCardBody, DraggableCardContainer } from "@/components/ui/draggable-card";
 
-
-
 export default function Gallery() {
   const items = [
     {

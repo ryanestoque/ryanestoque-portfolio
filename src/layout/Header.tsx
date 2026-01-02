@@ -26,6 +26,10 @@ export default function Header() {
       link: "#certifications",
     },
     {
+      name: "Projects",
+      link: "#projects",
+    },
+    {
       name: "Educ Tour",
       link: "#eductour",
     },

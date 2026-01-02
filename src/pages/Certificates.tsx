@@ -1,8 +1,6 @@
 import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
 import { HyperText } from "@/components/ui/hyper-text";
 
-
-
 export default function Certificates() {
   const testimonials = [
     {

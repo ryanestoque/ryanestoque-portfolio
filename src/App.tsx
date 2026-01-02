@@ -4,6 +4,7 @@ import Contact from "./pages/Contact";
 import EducTour from "./pages/EducTour";
 import Gallery from "./pages/Gallery";
 import Hero from "./pages/Hero";
+import Projects from "./pages/Projects";
 import Ryan from "./pages/Ryan";
 
 export default function App() {
@@ -15,6 +16,7 @@ export default function App() {
         <About />
         <Ryan />
         <Certificates />
+        <Projects />
         <EducTour />
         <Gallery />
         <Contact />

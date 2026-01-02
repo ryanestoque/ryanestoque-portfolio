@@ -1,60 +1,69 @@
-import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
- 
- 
-const content = [
+import { ProjectCard } from "@/components/common/project-cards";
+import { useScroll } from "framer-motion";
+import { useRef } from "react";
+
+const projects = [
   {
-    title: "Collaborative Editing",
-    description:
-      "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
-    content: (
-      <div className="flex h-full w-full items-center justify-center bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] text-white">
-        Collaborative Editing
-      </div>
-    ),
+    title: "Brok's Chikaan",
+    src: "/broks-chikaan.png",
+    desc: "This project is inspired from a small local food and catering business “Brok’s Chikaan”, which caters various meals and treats.",
+    url: "https://github.com/ryanestoque/broks-chikaan",
+    stack: ["HTML", "CSS", "JavaScript"]
   },
   {
-    title: "Real time changes",
-    description:
-      "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
-    content: (
-      <div className="flex h-full w-full items-center justify-center text-white">
-        <img
-          src="/linear.webp"
-          width={300}
-          height={300}
-          className="h-full w-full object-cover"
-          alt="linear board demo"
-        />
-      </div>
-    ),
+    title: "Wordol: Cebuano Wordle",
+    src: "/wordol.png",
+    desc: "A one-player word puzzle game that challenges players to guess a five-letter Cebuano word each time he or she plays.",
+    url: "https://github.com/ryanestoque/wordol-web",
+    stack: ["React", "TypeScript", "Tailwind", "Django"], 
   },
   {
-    title: "Version control",
-    description:
-      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
-    content: (
-      <div className="flex h-full w-full items-center justify-center bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] text-white">
-        Version control
-      </div>
-    ),
+    title: "Arado POS and Inventory System",
+    src: "/arado-pos.png",
+    desc: "A combined system that contributes in streamlining retail transactions of purchasing and efficiency of monitoring the inventory of hardware products in Arado Enterprises.",
+    url: "https://github.com/ryanestoque/arado-enterprises-pos",
+    stack: ["React", "TypeScript", "Tailwind", "ExpressJS", "MySQL"],
   },
   {
-    title: "Running out of content",
-    description:
-      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
-    content: (
-      <div className="flex h-full w-full items-center justify-center bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] text-white">
-        Running out of content
-      </div>
-    ),
+    title: "Cross Server: 2024 HCDC Online Canteen",
+    src: "/cross-server.png",
+    desc: "A food-ordering system that exclusivelyaccommodates Holy Crossians, catering a wide variety of foods and drinks directly served from HCDC’s canteen.",
+    url: "https://github.com/ryanestoque/cross-server",
+    stack: ["HTML", "CSS", "JavaScript"]
   },
 ];
 
-
 export default function Projects() {
+  const container = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: container,
+    offset: ["start start", "end end"],
+  });
+
   return (
-    <div className="w-full">
-      <StickyScroll content={content} />
-    </div>
-  );
-}
+    <section 
+      ref={container}
+      id="projects"
+      className="px-8 lg:px-16 xl:px-32 dark flex flex-col min-h-screen justify-center items-center w-full py-16 lg:py-0">
+      {/* <div className="flex justify-center">
+        <HyperText className="-mb-24 text-4xl font-bold w-full text-center">PROJECTS</HyperText>
+      </div> */}
+        {projects.map((project, i) => {
+            const targetScale = Math.max(
+              0.5,
+              1 - (projects.length - i - 1) * 0.1,
+            );
+            return (
+              <ProjectCard
+                key={`p_${i}`}
+                i={i}
+                {...project}
+                progress={scrollYProgress}
+                range={[i * 0.25, 1]}
+                targetScale={targetScale}
+              />
+            );
+          })}
+      </section>
+    );
+  }
